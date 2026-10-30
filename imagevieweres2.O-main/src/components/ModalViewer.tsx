@@ -140,6 +140,8 @@ export const ModalViewer: React.FC<ModalViewerProps> = ({
       if (e.key === 'Delete') onDeleteCurrent();
       if (e.key === 'h' || e.key === 'H') onHighlightCurrent();
       if (e.key === 'Enter') onKeepAndNextSKU();
+      if (e.key === "r" || e.key === "R") onRemoveBg(item);
+      if (e.key === "q" || e.key === "Q") onRevertLink(item)
       if ((e.key === 'e' || e.key === 'E') && item) onOpenEditLink(item);
       if ((e.key === 'm' || e.key === 'M') && item) onOpenEditMetadata(item);
     };
